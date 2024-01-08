@@ -5,7 +5,6 @@ def solution(nums: list[int]) -> int:
     
     sum = 0
     for i, n in enumerate(nums):
-        print(N, i, choose(N, i), n, sep='\t')
         sum += choose(N, i) * n
     
     print(sum)

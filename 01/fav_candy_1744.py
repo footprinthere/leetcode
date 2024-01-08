@@ -8,7 +8,7 @@ def solution(candiesCount: list[int], queries: list[list[int]]) -> list[bool]:
     return answer
 
 
-def process(candiesCount: list[int], cumCount: list[int], query: list[int]) -> bool:
+def process(cumCount: list[int], query: list[int]) -> bool:
     t, day, cap = query[0], query[1], query[2]
 
     # type t candy: (cum[t-1] ~ cum[t]]

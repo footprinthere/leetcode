@@ -50,7 +50,7 @@ class MedianHeap:
 
         # add
         med = self.peek()
-        if new <= med:
+        if new <= med:  # size가 홀수라면 median은 항상 left에 있음
             heapq.heappush(self.left, -1 * new)
             balance = 1
         else:
